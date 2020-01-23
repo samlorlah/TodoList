@@ -1,0 +1,9 @@
+/* .add-item_btn {
+  margin-left: 130px;
+  width: 400px !important;
+} */
+
+.itemForm {
+  flex: 1;
+  margin-bottom: 10px;
+}

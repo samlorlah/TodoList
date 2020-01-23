@@ -1,0 +1,7 @@
+.add-header {
+  font-size: 4em;
+}
+.itemHeader {
+  flex: 0;
+  flex-basis: 45%;
+}

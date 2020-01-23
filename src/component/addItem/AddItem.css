@@ -1,0 +1,8 @@
+.add-input {
+  background-color: #1f262a;
+  height: 40vh;
+  margin-top: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}

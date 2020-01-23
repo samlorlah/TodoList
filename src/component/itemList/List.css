@@ -1,0 +1,11 @@
+.list {
+  display: flex;
+}
+
+.list_item {
+  flex: 1;
+}
+
+.list_group_item {
+  background-color: white;
+}
