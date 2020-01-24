@@ -128,6 +128,11 @@ const App = () => {
     }
   };
 
+  const clearListHandler = event => {
+    event.preventDefault();
+    setTask([]);
+  };
+
   useEffect(() => {
     localStorage.setItem("todo", JSON.stringify(tasks));
   }, [tasks]);
@@ -135,6 +140,14 @@ const App = () => {
   return (
     <div className="row">
       <div className="col-12 col-md-6 offset-md-3">
+        <h3>
+          Keep track of your daily / weekly activities with our TODO List
+          Application.
+        </h3>
+        <p>
+          Be assured none of your data will be lost so far you are still using
+          the same browser. Use and Enjoy!!!
+        </p>
         <AddItem
           item={addItem}
           change={addItemChangeHandler}
@@ -147,6 +160,12 @@ const App = () => {
           edit={handleEdit}
           handleDelete={handleDelete}
         />
+        <button
+          className="btn btn-danger btn-block mt-2"
+          onClick={clearListHandler}
+        >
+          Clear List
+        </button>
       </div>
     </div>
   );

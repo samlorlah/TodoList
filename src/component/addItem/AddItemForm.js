@@ -6,12 +6,12 @@ export const AddItemForm = ({ item, change, submit, updateEdit }) => {
       <form onSubmit={submit}>
         <div className="input-group my-3 px-5">
           <div className="input-group-prepend">
-            <div className="input-group-text">ADD TODO ITEM</div>
+            <div className="input-group-text">ADD TODO</div>
           </div>
           <input
             type="text"
             className="form-control"
-            placeholder="What Do You Plan To Do Today?"
+            placeholder="Enter TODO Item Here"
             value={item}
             onChange={change}
           />
