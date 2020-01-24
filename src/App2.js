@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import uuid from "uuid";
 
 import AddItem from "./component/addItem/AddItem";
@@ -61,15 +61,15 @@ const App = () => {
         edit: false
       };
 
-      // if (localStorage.getItem("todo") == null) {
-      //   let initialTask = [];
-      //   initialTask.push(newTask);
-      //   localStorage.setItem("todo", JSON.stringify(initialTask));
-      // } else {
-      //   let getLocal = JSON.parse(localStorage.getItem("todo"));
-      //   getLocal.push(newTask);
-      //   localStorage.setItem("todo", JSON.stringify(getLocal));
-      // }
+      if (localStorage.getItem("todo") == null) {
+        let initialTask = [];
+        initialTask.push(newTask);
+        localStorage.setItem("todo", JSON.stringify(initialTask));
+      } else {
+        let getLocal = JSON.parse(localStorage.getItem("todo"));
+        getLocal.push(newTask);
+        localStorage.setItem("todo", JSON.stringify(getLocal));
+      }
 
       setNewItem(newTask);
 
@@ -88,7 +88,6 @@ const App = () => {
       }
       return task;
     });
-
     setTask(updatedTask);
   };
 
@@ -127,10 +126,6 @@ const App = () => {
       setTask(removeItem);
     }
   };
-
-  useEffect(() => {
-    localStorage.setItem("todo", JSON.stringify(tasks));
-  }, [tasks]);
 
   return (
     <div className="row">
