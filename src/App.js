@@ -145,8 +145,8 @@ const App = () => {
           Application.
         </h3>
         <p>
-          No data would be lost even. Browser can be closed and opened later
-          Thank you for using our TODO List.
+          No data would be lost. Browser can be closed and opened later Thank
+          you for using our TODO List.
         </p>
         <AddItem
           item={addItem}
