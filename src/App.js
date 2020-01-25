@@ -145,8 +145,8 @@ const App = () => {
           Application.
         </h3>
         <p>
-          Be assured none of your data will be lost so far you are still using
-          the same browser. Use and Enjoy!!!
+          No data would be lost even. Browser can be closed and opened later
+          Thank you for using our TODO List.
         </p>
         <AddItem
           item={addItem}
